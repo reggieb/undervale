@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Undervale</title>
+    <meta name="description" content="Home page of Undervale Ltd" />
+    <meta name="keywords" content="Ruby Rails HTML JavaScript CSS Web Development" />
+    <meta name="author" content="Rob Nichols" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="stylesheets/undervale.css">
+  </head>
+  <body>
+    <header>
+      <img src="images/undervale.png" alt="Undervale Ltd" />
+      <h1>Undervale Ltd</h1>
+    </header>
+   <div id="impress">
+      <article id="overview"  class="step slide" data-x="-1000" data-y="-1600">
+        Creation, improvement and development of interfaces between organisations
+        and the consumers of their services and products.
+      </article>
+      <article id="project_management"  class="step slide" data-x="0" data-y="-1600">
+        Using modern project management techniques:
+        <br/><em>Agile, scrums, stand ups and regular client reviews.</em>
+      </article>
+    <article id="source_control"  class="step slide" data-x="1000" data-y="-1600">
+      Code security and availability via git and github.
+    </article>
+    <article id="core_philosophy_of_undervale">
+      <header id="core_philosophy" class="step slide" data-x="4000" data-y="400" data-rotate="90" data-scale="5">
+          <h2>Robust maintainable solutions</h2>
+      </header>
+      
+      <section id="readable_code" class="step" data-x="1200" data-y="-400" data-rotate="90" data-scale="2">
+        <h3>Code should be easy to read.</h3>
+        <p>
+          You should not need to know the coding language to be able to
+          understand what the code is doing.
+        </p>
+        <p>
+          Readable code is easier to maintain, because it is easier to determine
+          what each section is doing and therefore identify quickly what needs
+          to be modified. Also it is then easier to make that modification because
+          time is not wasted trying to work out how the code is working.
+        </p>
+        <p>
+          The rigour required to craft readable code tends to lead to the
+          development of robust systems, because the process focuses the mind
+          on understanding what each element of code is doing.
+        </p>
+      </section>
+      <section id="performance" class="step" data-x="-1200" data-y="400" data-rotate="-60" data-scale="4">
+        <h3>Good performance is vital to a good user experience</h3>
+        <p>
+          An application that does not respond as quickly and reliably as
+          users expect, will not continue to be used. And an application that
+          is not used, is of no use to anyone.
+        </p>
+        <p>
+          Out and out speed rarely corresponds to good performance, as it
+          tends towards making shortcuts which sacrifice readability. Thereby,
+          they make the code harder to maintain, and bugs become harder to fix.
+          A method that returns the wrong answer in 1 milliseconds is never
+          as good as the method that returns the right answer in 2 milliseconds.
+        </p>
+        <p>
+          Keeping things simple, using and understanding the best techniques,
+          and staying abreast of technology developments, all help in
+          achieving good performance. Clean simple code tends to lead to good
+          performance and therefore should always be the starting point.
+        </p>
+      </section>
+      <section id="testing" class="step" data-x="0" data-y="2500" data-rotate="-300" data-scale="3">
+        <h3>Testing and refactoring</h3>
+        <p>
+          Refactoring is key to ensuring that code is continually improved and 
+          that the introduction or removal of elements does not adversely effect 
+          the rest of the application. Without refactoring, code does not get
+          better each time it is worked on. In fact, the opposite happens.
+          Code that is not refactored as it is developed becomes confused and
+          difficult to maintain.
+        </p>
+        <p>
+          Without a good test suite, refactoring becomes difficult as an
+          application grows. If a developer knows they can rely on their tests to
+          identify the adverse effects of any change, they are able to make changes
+          and know the scope of that change. Thereby, they can make the
+          modifications needed to successfully accommodate the refactor.
+        <p>
+          <em>
+            Refactoring is essential to the development of good code, and
+            therefore, developing a good suite of tests is also essential.
+          </em>
+        </p>
+      </section>
+    </article>
+    <article id="contact" class="step" data-x="1500" data-y="1000" data-scale="8">
+      <a href="mailto:info@undervale.co.uk">Contact us via info@undervale.co.uk</a>
+    </article>
+    <div id="new_start" class="step" data-x="-1000" data-y="-1600">
+    </div>
+  </div>
+  <div id="nav_hint">Use spacebar to navigate</div>
+  <script src="javascript/impress.js"></script>
+  <script>impress().init();</script>
+  <script>
+    document.addEventListener("keydown", function ( event ) {
+      var navHint = document.getElementById('nav_hint');
+      navHint.style.display = 'none';
+      return true;
+    });
+  </script>
+  </body>
+</html>
